@@ -70,6 +70,8 @@ PR-Testing/jpi/
 
 # IntelliJ
 /out/
+/.idea/
+/target/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

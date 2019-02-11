@@ -16,9 +16,12 @@
 
 -->
 <?jelly escape-by-default='true'?>
-<!--
-  This view is used to render the installed plugins page.
--->
-<div>
-  Sync your KubeSphere Pipelines with Jenkins jobs.
-</div>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:invisibleEntry>
+      <f:readOnlyTextbox field="namespace"/>
+      <f:readOnlyTextbox field="name"/>
+      <f:readOnlyTextbox field="uid"/>
+      <f:readOnlyTextbox field="resourceVersion"/>
+      <f:readOnlyTextbox field="contextDir"/>
+    </f:invisibleEntry>
+</j:jelly>
